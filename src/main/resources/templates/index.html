@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JavaBlogin'</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" th:href="@{/style1.css}" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/hirphaerba240/image/upload/v1562897829/bt_zrokx9.png" width="30" height="30" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/gitHub">GitHub</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/programDesignAlg">Programing Design & Algorithms</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/coreJava">Core Java</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/oop">Object-oriented Java</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="htmlCssBoot">HTML/CSS/Bootstrap</a>
+                </div>
+            </li>
+            <a class="nav-link" href="/mission">Mission</a>
+            </li>
+            </li>
+            <a class="nav-link" href="/javaBootcamp">Java Bootcamp</a>
+            </li>
+            </li>
+            <a class="nav-link" href="/aboutus">Blog Authors</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<!-- Page Header -->
+<header>
+    <div class="overlay">
+        <h1>Java Bootcamp</h1>
+        <h2>By Hirpha and Firehiwot</h2>
+        <br>
+        <button><a href="/aboutus">About Us</a></button>
+    </div>
+</header>
+
+&nbsp;
+&nbsp;
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-6">
+            <div id="postlist">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">Welcome to Java Bootcamp</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-06-10<br>10:30:00</em></small>                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        Object oriented Java is amazing! we now understand what makes Java a very powerful language.
+                        Prior to learning about object oriented Java all my code was written in the main, while that’s very quick it’s also very ineffective and not proper coding etiquette.
+                        Also as you build programs and more lines of code are written everything cannot be written in main cause that’s way too much code.
+                        My favorite thing to do is make a new method and call it into main. I’m also getting comfortable with creating new classes, but it’s challenging to call the class in main correctly.
+                        I easily remember to define the class, but I forget to call the class. So I’m still working on that.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">Core Java</span> <span class="label label-default">Updates</span> <span class="label label-default">Jan</span>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">Simplification at it's finest</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-06-10 011:30:45</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        I’ve never had experience with object oriented programming prior to the bootcamp either but what I found useful is seeing the forest from the trees.
+                        I imagine java as a world and trying to figure out each part of the world within Java.
+                        I like that object oriented Java allows for a separation that results in a cleaner format for code.                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">OOJ</span> <span class="label label-default">Updates</span> <span class="label label-default">Feb</span>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">New to design?</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-01-30<br>03:30:00</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        So, from what we've learned so far an algorithm is just a set of actions for the computer to execute.
+                        These actions can be repeated using a loop. There are different types of loops to use within a program.
+                        Algorithms seem like an important concept and I definitely want to dive deeper into these equations.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">PDA</span> <span class="label label-default">Updates</span> <span class="label label-default">Jan</span>
+                    </div>
+                </div>
+
+                &nbsp;
+
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">All algorithms to live by</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-06-14 012:30:45</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        Design and algorithms are the backbone to the efficiency and coherency of a program. we've learned  that algorithms come in various fashions.
+                        We have 5 different types of algorithms: linear, logarithmic, quadratic, constant, and polylogarithmic. Each have different facets and speed efficiencies.
+                        The most basic understanding is that in bigger applications you want a program that uses either logarithmic or linear or constant algorithms due to the speed at which they are run.
+                        Linear moves upward in processing speed as input increases, logarithmic starts slow but as input increase so does the processing speed, and constant keep the same processing speed with whatever amount of input.
+                        Quadratic is the slowest due to the number of iterations needed to be done to complete one task, therefore as input increases the processing speed exponentially increases.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">PDA</span> <span class="label label-default">Updates</span> <span class="label label-default">Feb</span>
+                    </div>
+                </div>
+
+                &nbsp;
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">What is Java?</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-06-024<br>01:30:00</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                         core Java is the building blocks of Java such as methods, classes, and other elements that are assembled together to build a program.
+                        Initially we found loops challenging to work with because we weren't sure when to use which loop since there are several.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">Core Java</span> <span class="label label-default">Updates</span> <span class="label label-default">Jan</span>
+                    </div>
+                </div>
+                &nbsp;
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">More info About Java?</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-06-27 9:30:45</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        Java is both an intriguing language and wonderful way to display different methods of applications.
+                        Many programs out there from what i've heard may be more simplified than Java, but none come close to it's initial and forever changing environment.
+                        Second only to C++. we believe that a foundational building block to coding is Java and is definitely a gateway programming language that should be learned.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">Core Java</span> <span class="label label-default">Updates</span> <span class="label label-default">Feb</span>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">What it means to use GitHub</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-06-14 12:30:45</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        <a href="#" class="thumbnail">
+                            <img alt="GitHub gif" src="https://www.omgubuntu.co.uk/wp-content/uploads/2018/06/github-logo.jpeg" width=720px height=472px
+                            >
+                        </a>
+                        GitHub has been especially helpful during our journey into coding. Currently we had a huge list of repositories and the ability to push, pull and collaborate on projects.
+                        GitHub is an amazing site and the coding future is in the hands of this website. The ability to see and understand everyone else's code helps to others to get better at coding as well.
+                        we have increasingly enjoyed my experience with GitHub and it's a tool to be reckoned with in the job field. Although Jennifer and I are still new at GitHub, we hope that we will
+                        continue to grow in the field and in our knowledge of GitHub.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">GitHub</span> <span class="label label-default">Updates</span> <span class="label label-default">Feb</span>
+                    </div>
+                </div>
+
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">Basic HTML</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-07-11<br>10:30:15</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        This week we learned Frontend web development which was very easy for me because that’s where I first began my programming journey.
+                        we learned HTML and CSS first and found it very easy but also tedious but bootstrap really makes frontend much more fun and quicker.
+                        w’ve never heard of bootstrap before but we will be using it going forward to develop websites for ourself.
+                        Front end is very fun because your designing an actual product and not just printing up console.                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">HCB</span> <span class="label label-default">Updates</span> <span class="label label-default">Jan</span>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-1">
+                </div>
+
+
+                <div class="panel">
+                    <div class="panel-heading">
+                        <div class="text-center">
+                            <div class="row">
+                                <div class="col-sm-9">
+                                    <h3 class="pull-left">Little details?</h3>
+                                </div>
+                                <div class="col-sm-3">
+                                    <h4 class="pull-right">
+                                        <small><em>2019-07-11 10:14:45</em></small>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel-body">
+                        we find front end to be a bit tedious and painstaking since every page needs to be linked and updated.
+                        It’s annoying that if I want to change one thing I have to make sure it’s changed in the different pages.
+                        As of now I prefer backend but I will continue to learn more frontend.
+                    </div>
+
+                    <div class="panel-footer">
+                        <span class="label label-default">HCB</span> <span class="label label-default">Updates</span> <span class="label label-default">Feb</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+
+<footer>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-10 mx-auto">
+                <p class="copyright text-muted">Copyright &copy;Java Bootcamp 2019</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
